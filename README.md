@@ -1,6 +1,6 @@
 # Telecom Customer Churn Prediction
 
-I built An end to end machine-learning project that predicts whether a telecom customer is likely to cancel service or not. The project cleans customer data, compares three classification algorithms, evaluates them on a held out test set, saves the best pipeline, and makes predictions for new customers.
+I built this project to practice using machine learning on a realistic business problem. The goal is to predict which telecom customers are likely to cancel their service. I cleaned the customer data, trained and compared three classification models, evaluated their performance, and created a script that can predict churn risk for a new customer.
 
 ## Results
 
