@@ -38,14 +38,14 @@ The coefficient chart below shows how the selected model used the strongest enco
 
 ## What I did
 
-1. Download and validate IBM's 7,043-row dataset.
-2. Convert `TotalCharges` to a numeric field and remove 11 unusable rows.
+1. Download and validate IBM's 7,043 dataset.
+2. Convert "totalcharges" to a numeric field and remove 11 unusable rows.
 3. Preserve customer IDs for reporting but exclude them from model features.
-4. Create a stratified 80/20 train-test split with a fixed random seed.
-5. Fit imputation, scaling, and one-hot encoding only on training data.
+4. Create a stratified 80/20 train test split with a fixed random seed.
+5. Fit imputation, scaling, and one hot encoding only on training data.
 6. Compare Logistic Regression, Decision Tree, and Random Forest classifiers.
 7. Evaluate accuracy, precision, recall, F1, ROC-AUC, ROC curves, and a confusion matrix.
-8. Save the best complete preprocessing-and-model pipeline with Joblib.
+8. Save the best complete preprocessing and model pipeline with Joblib.
 
 ## Repository structure
 
