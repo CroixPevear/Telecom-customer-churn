@@ -20,14 +20,14 @@ The selected model identified **298 of 374 churners**, or **79.7%**, in the test
 
 ## Business interpretation
 
-Exploratory analysis found several useful customer-retention signals:
+The Patterns that stood out most in the data were:
 
-- Month-to-month customers churned at **42.7%**, compared with **2.8%** for two-year contracts.
-- Customers with 0–12 months of tenure churned at **47.4%**, compared with **9.5%** for customers with 49–72 months.
-- Fiber-optic customers churned at **41.9%**, compared with **19.0%** for DSL customers.
-- Electronic-check customers churned at **45.3%**, compared with roughly **15–17%** for automatic payments.
+- Month to month customers churned at **42.7%**, compared with **2.8%** for two year contracts.
+- Customers with 0 to 12 months of tenure churned at **47.4%**, compared with **9.5%** for customers with 49 to 72 months.
+- Fiber optic customers churned at **41.9%**, compared with **19.0%** for DSL customers.
+- Electronic check customers churned at **45.3%** compared to roughly **15–17%** for automatic payments.
 
-These are associations rather than proof that any feature causes churn. They suggest that retention teams could prioritize newer, month-to-month customers and investigate service or billing friction among high-risk groups.
+These are associations rather than proof that any feature causes churn. They suggest that retention teams could prioritize newer, month to month customers and investigate service or billing friction among the higher risk groups.
 
 The coefficient chart below shows how the selected model used the strongest encoded signals. Because several billing and service variables are correlated, individual coefficient directions should not be interpreted as causal effects.
 
@@ -35,7 +35,7 @@ The coefficient chart below shows how the selected model used the strongest enco
 
 ![Confusion matrix for the selected model](reports/figures/confusion_matrix.png)
 
-## Machine-learning workflow
+## What I did
 
 1. Download and validate IBM's 7,043-row dataset.
 2. Convert `TotalCharges` to a numeric field and remove 11 unusable rows.
@@ -97,7 +97,7 @@ This project uses IBM's fictional Telco Customer Churn sample with 7,043 records
 - [IBM source repository](https://github.com/IBM/telco-customer-churn-on-icp4d)
 - [IBM dataset CSV](https://raw.githubusercontent.com/IBM/telco-customer-churn-on-icp4d/master/data/Telco-Customer-Churn.csv)
 
-## Limitations and next steps
+## What I would improve next
 
 - The data describes a fictional company and does not establish causal relationships.
 - The default 0.50 classification threshold favors recall and creates false positives; a real retention team should tune it using intervention costs and capacity.
