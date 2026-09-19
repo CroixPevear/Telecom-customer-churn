@@ -12,7 +12,7 @@ The models were trained on 5,625 records and evaluated on 1,407 previously unsee
 | Random Forest | **0.751** | **0.521** | 0.773 | **0.622** | 0.832 |
 | Decision Tree | 0.736 | 0.503 | 0.794 | 0.616 | 0.828 |
 
-The selected model identified **298 of 374 churners**, or **79.7%**, in the test set. Random Forest produced slightly higher accuracy and F1, while Logistic Regression ranked churn risk best by ROC-AUC.
+The selected model identified **298 of 374**, or **79.7%**, in the test set. Random Forest produced slightly higher accuracy and F1, while Logistic Regression ranked churn risk best by ROC-AUC.
 
 ![Model performance comparison](reports/figures/model_comparison.png)
 
@@ -55,7 +55,7 @@ telecom-customer-churn/
 ├── models/                   # Trained pipeline (ignored by Git)
 ├── notebooks/               # Guided exploratory analysis
 ├── reports/
-│   ├── figures/              # Portfolio-ready evaluation charts
+│   ├── figures/              # Generated evaluation charts
 │   ├── model_metrics.csv
 │   └── model_metrics.json
 ├── src/
@@ -63,7 +63,6 @@ telecom-customer-churn/
 │   ├── predict.py
 │   └── train.py
 ├── tests/
-├── INTERVIEW_GUIDE.md
 ├── README.md
 └── requirements.txt
 ```
@@ -100,8 +99,8 @@ This project uses IBM's fictional Telco Customer Churn sample with 7,043 records
 ## What I would improve next
 
 - The data describes a fictional company and does not establish causal relationships.
-- The default 0.50 classification threshold favors recall and creates false positives; a real retention team should tune it using intervention costs and capacity.
-- Cross-validation and hyperparameter tuning could provide more stable estimates.
+- The default 0.50 classification threshold favors recall and creates false positives. a real retention team should tune it using intervention costs and capacity.
+- Cross validation and hyperparameter tuning could provide more steady estimates.
 - Production monitoring would be needed to detect data drift and performance changes.
 
 ## Author
