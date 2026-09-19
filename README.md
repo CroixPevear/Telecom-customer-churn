@@ -27,7 +27,8 @@ The Patterns that stood out most in the data were:
 - Fiber optic customers churned at **41.9%**, compared with **19.0%** for DSL customers.
 - Electronic check customers churned at **45.3%** compared to roughly **15–17%** for automatic payments.
 
-These are associations rather than proof that any feature causes churn. They suggest that retention teams could prioritize newer, month to month customers and investigate service or billing friction among the higher risk groups.
+These patterns show associations, not proof that one feature directly causes customers to leave. In a real telecom company I would use the model to flag higher risk customers for review and help a retention team decide where offers or follow up support might be useful.
+
 
 The coefficient chart below shows how the selected model used the strongest encoded signals. Because several billing and service variables are correlated, individual coefficient directions should not be interpreted as causal effects.
 
