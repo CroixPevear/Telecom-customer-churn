@@ -22,9 +22,9 @@ The selected model identified **298 of 374**, or **79.7%**, in the test set. Ran
 
 The Patterns that stood out most in the data were:
 
-- Month to month customers churned at **42.7%**, compared with **2.8%** for two year contracts.
-- Customers with 0 to 12 months of tenure churned at **47.4%**, compared with **9.5%** for customers with 49 to 72 months.
-- Fiber optic customers churned at **41.9%**, compared with **19.0%** for DSL customers.
+- Month to month customers churned at **42.7%**, compared to **2.8%** for two year contracts.
+- Customers with 0 to 12 months of tenure churned at **47.4%**, compared to **9.5%** for customers with 49 to 72 months.
+- Fiber optic customers churned at **41.9%**, compared to **19.0%** for DSL customers.
 - Electronic check customers churned at **45.3%** compared to roughly **15–17%** for automatic payments.
 
 These patterns show associations, not proof that one feature directly causes customers to leave. In a real telecom company I would use the model to flag higher risk customers for review and help a retention team decide where offers or follow up support might be useful.
